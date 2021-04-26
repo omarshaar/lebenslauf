@@ -1,0 +1,325 @@
+body{
+    min-width: 270px;
+}
+
+
+.headercontainer{
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    z-index: 998;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mainHeder{
+    width: 80%;
+    max-width: 1920px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+.logo{
+    height: 40px;
+}
+
+.headerNav ul{
+    margin: 0;
+    padding: 0;
+}
+
+.headerNav ul li{
+    display: inline-block;
+    margin-left: 28px;
+}
+
+
+.headerNav ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    color: var(--mainColor);
+
+}
+
+
+
+
+/****/
+
+#Menu{
+    position: absolute;
+    visibility: hidden;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+#MnTbContainer{
+    cursor: pointer;
+}
+
+.MnTop , .MnBottom{
+    height: 6px;
+    width: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: var(--mainColor);
+    transition: transform 0.5s;
+}
+
+
+.moveT{
+    transform: rotate(35deg);
+    margin-bottom: -5px;
+    transition: transform 0.5s;
+}
+
+.moveB{
+    transform: rotate(-35deg);
+    transition: transform 0.5s;
+}
+
+
+
+
+
+
+
+
+/**/
+
+
+.menuMobDiv{
+
+    z-index: 15;
+    position: fixed;
+    right: 0;
+    top: -400px;
+    background-color: var(--mainColor);
+    height: 400px;
+    width: 100%;
+    transition: 0.5s;
+
+}
+
+
+.menuMobDivClik{
+    top: 0;
+}
+
+
+.headerNavMob{
+    margin-top: 180px;
+}
+
+.headerNavMob ul li{
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -25px;
+}
+
+
+.headerNavMob ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+
+
+}
+
+
+
+
+
+
+
+
+/*****************************************************************************/
+
+
+
+.bghalcol{
+    height: 100vh;
+    width: 50vw;
+    background-color: var(--mainColor);
+
+}
+
+
+
+.formContainer{
+    height: max-content;
+    width: 450px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 10px;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.ContactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 65%;
+}
+
+.ContactForm span{
+    color: var(--mainColor);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.NEInputs{
+    width: 100%;
+    height: 25px;
+    border: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    outline: none;
+    margin-top: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.NachrichtIn{
+    height: 200px;
+    width: 100%;
+    resize: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+
+}
+
+.ConBtns{
+    width: 100%;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: space-around;
+}
+
+.srBTNs{
+    color: #000;
+    background-color: #fff;
+    border: 1px #000 solid ;
+    border-radius: 30px ;
+    padding: 2px 25px;
+    transition: all 0.3s;
+}
+
+
+.srBTNs:hover{
+    color: #fff;
+    background-color: var(--mainColor);
+    border: 1px #364f6b3a solid;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 630px) {
+    
+
+    .formContainer{
+        width: 85%;
+    }
+
+
+
+    .ContactForm{
+        width: 85%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    
+    .ContactForm{
+        width: 75%;
+    }
+}
+
+@media (max-width: 550px){
+
+    #Menu{
+        position: relative;
+        visibility: visible;
+    }
+    
+    
+    .headerNav{
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 400px) {
+    
+
+    .formContainer{
+        width: 90%;
+    }
+
+
+
+    .ContactForm{
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 250px) {
+    
+
+    body{
+        visibility: hidden;
+    }
+}

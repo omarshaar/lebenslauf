@@ -1,0 +1,300 @@
+
+
+body{
+    background-color: #fff;
+    min-width: 270px;
+}
+
+.headercontainer{
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    z-index: 19;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.mainHeder{
+    width: 80%;
+    min-width: 270px;
+    max-width: 1920px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+
+.logo{
+    height: 40px;
+}
+
+.headerNav ul{
+    margin: 0;
+    padding: 0;
+}
+
+.headerNav ul li{
+    display: inline-block;
+    margin-left: 28px;
+}
+
+
+.headerNav ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    color: var(--mainColor);
+
+}
+
+
+
+
+
+/****/
+
+#Menu{
+    position: absolute;
+    visibility: hidden;
+    left: 0;
+    top: 0;
+    z-index: 22;
+}
+
+#MnTbContainer{
+    cursor: pointer;
+}
+
+.MnTop , .MnBottom{
+    height: 6px;
+    width: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: var(--mainColor);
+    transition: transform 0.5s;
+}
+
+
+.moveT{
+    transform: rotate(35deg);
+    margin-bottom: -5px;
+    transition: transform 0.5s;
+}
+
+.moveB{
+    transform: rotate(-35deg);
+    transition: transform 0.5s;
+
+}
+
+
+/**/
+
+
+.menuMobDiv{
+    z-index: 15;
+    position: fixed;
+    right: 0;
+    top: -400px;
+    background-color: var(--mainColor);
+    height: 400px;
+    width: 100%;
+    transition: 0.5s;
+
+}
+
+
+.menuMobDivClik{
+    top: 0;
+}
+
+
+.headerNavMob{
+    margin-top: 180px;
+}
+
+.headerNavMob ul li{
+    list-style: none;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: -30px;
+}
+
+
+.headerNavMob ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+/*////////////////////////////////////////////////////////////*/
+
+
+
+.bodyContainer{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.backColorDiv{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: calc(100% - 150px);
+    width: 35%;
+    background-color: var(--mainColor);
+}
+
+
+.aboutCard{
+    width: 850px;
+    height: 530px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 5;
+    background-color: #fff;
+    margin-top: 75px;
+    display: flex;
+}
+
+.fotoNameSocialMCard{
+    height: 100%;
+    width: 42%;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 10px 10px;
+}
+
+.fotNa{
+    height: 90%;
+    width: 100%;
+    background-color: #364f6b3a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.MyFotoContainer{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.myFoto{
+    width: 200px;
+}
+
+.MyName{
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.UndLine{
+    height: 2px;
+    width: 60px;
+    background-color: blue;
+}
+
+.SociaMContainer{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SciaMIcons{
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.Txtebtnsdisc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+    height: 100%;
+    width: 57%;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+.HalloP{
+    font-weight: normal;
+}
+
+.HalloP span{
+    font-size: 90px;
+    font-weight: bold;
+    color: var(--mainColor);
+}
+
+.btnsContainer{
+    display: flex;
+    width: 260px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LebenslaufBtn , .KontaktBtn{
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    border: 1px #000 solid ;
+    border-radius: 30px ;
+    padding: 2px 25px;
+    transition: all 0.3s;
+}
+
+
+.LebenslaufBtn:hover , .KontaktBtn:hover{
+    color: #fff;
+    background-color: var(--mainColor);
+    border: 1px #364f6b3a solid;
+
+}
+
+
+.myDisc{
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+
+
+.footer{
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    max-width: 1920px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+}
+
+.condataContainer{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.condata{
+    text-align: center;
+    margin-left: 30px;
+    font-size: 14px;
+    color: var(--mainColor);
+}

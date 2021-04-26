@@ -1,0 +1,297 @@
+@media(max-width: 1030px ){
+
+
+    .aboutCard{
+        width: 80%;
+        height: max-content;
+        position: absolute;
+        top: 600px;
+        z-index: 10;
+        background-color: #fff;
+        margin-top: 75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+
+    .fotoNameSocialMCard{
+        width: 100%;
+    }
+
+
+    .SociaMContainer{
+        height: 35%;
+        z-index: 3;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+
+    .Txtebtnsdisc{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 0px;
+        padding-bottom: 30px;
+        margin-top: 40px;
+        width: 90%;
+    }
+
+
+    .myDisc{
+        text-align: center;
+        margin-top: 30px;
+    }
+
+
+    .btnsContainer{
+        margin-top: 15px;
+    }
+
+    .bgImagme{
+        height: 350px;
+    }
+}
+
+
+
+
+
+@media(max-width: 730px){
+    .infocardContainer{
+        width: 85%;
+        transition: 0.5s;
+    }
+
+    .ausbildungsContainer{
+        width: 100%;
+        transition: 0.2s;
+    }
+
+
+    #mainHeder{
+        height: 110px;
+    }
+
+    .headercontainer{
+        height: 110px;
+    }
+
+
+    .bgImagme{
+        height: 300px;
+    }
+
+    .inftitl{
+        font-size: 19px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 630px){
+    .headerNav ul li{
+        margin-left: 20px;
+    }
+
+    #Menu{
+        position: relative;
+        visibility: visible;
+    }
+
+
+    .headerNav{
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+
+    #mainHeder{
+        height: 90px;
+    }
+    
+    .mainHeder{
+        height: 90px;
+    }
+
+    .headercontainer{
+        height: 90px;
+    }
+
+    .backColorDiv{
+        height: calc(100% - 90px);
+        background-color: var(--mainColor);
+    }
+
+
+
+    .aboutCard{
+        margin-top: 0px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 0 40px;
+    }
+}
+
+
+
+
+
+@media(min-width: 630px){
+
+    .menuMobDiv{
+        visibility: hidden;
+    }
+    
+}
+
+
+
+
+@media(max-width: 550px){
+
+
+    body{
+        padding-bottom: 180px;
+    }
+
+
+    .lbslfContainer{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 450px){
+
+
+    .Logo{
+        height: 35px;
+    }
+
+
+    body{
+        padding-bottom: 350px;
+    }
+
+    .felddatjob{
+        width: 100%;
+        background-color: #fff;
+        margin-top: 30px;
+        border-radius: 5px;
+        display: grid;
+        display: -ms-grid;
+        display: -moz-grid;
+
+
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+
+
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+
+    .datumj{
+        font-size: 18px;
+        color: var(--mainColor);
+        margin: 10px 25px;
+    }
+    .wdjh{
+        margin: auto 25px;
+        font-size: 16px;
+        width: 90%;
+    }
+
+    
+    .inftitl{
+        font-size: 17px;
+
+    }
+
+    .lebslau{
+        font-size: 31px;
+
+    }
+
+    
+    .rectaLL{
+        height: 22px;
+        width: 22px;
+    }
+
+
+
+    
+    .DiscContainer{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+@media(max-width: 390px){
+
+    .cardgrid{
+        grid-template-columns: 150px auto;
+    }
+
+    .titInf , .theinf{
+        font-size: 16px;
+    }
+
+    .lebslau{
+        font-size: 28px;
+
+    }
+
+    .rectaLL{
+        height: 20px;
+        width: 20px;
+    }
+
+    
+    body{
+        padding-bottom: 450px;
+    }
+}
+
+
+
+@media(max-width: 350px){
+
+    .footer{
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,299 @@
+body{
+    background-color: #364f6b3a;
+    padding-bottom: 50px;
+    min-width: 270px;
+}
+
+.headercontainer{
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.mainHeder{
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #fff;
+    z-index: 5;
+}
+
+.logo{
+    height: 40px;
+}
+
+.headerNav ul{
+    margin: 0;
+    padding: 0;
+}
+
+.headerNav ul li{
+    display: inline-block;
+    margin-left: 28px;
+}
+
+
+.headerNav ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    color: var(--mainColor);
+
+}
+
+
+
+
+/***/
+
+
+#Menu{
+    position: absolute;
+    visibility: hidden;
+    left: 0;
+    top: 0;
+}
+
+#MnTbContainer{
+    cursor: pointer;
+}
+
+.MnTop , .MnBottom{
+    height: 6px;
+    width: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: var(--mainColor);
+    transition: transform 0.5s;
+}
+
+
+.moveT{
+    transform: rotate(35deg);
+    margin-bottom: -5px;
+    transition: transform 0.5s;
+}
+
+.moveB{
+    transform: rotate(-35deg);
+    transition: transform 0.5s;
+}
+
+
+
+
+
+/**/
+
+
+.menuMobDiv{
+
+    z-index: 15;
+    position: fixed;
+    right: 0;
+    top: -400px;
+    background-color: var(--mainColor);
+    height: 400px;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 3;
+}
+
+
+.menuMobDivClik{
+    top: 0;
+}
+
+
+.headerNavMob{
+    margin-top: 180px;
+}
+
+.headerNavMob ul li{
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -30px;
+}
+
+
+.headerNavMob ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+
+
+}
+
+
+
+
+/*///////////////////////////////////////////////////////*/
+
+.bgImagme{
+    background: url(Src/imags/meBG.jpg) center fixed;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagOverly{
+    width: 100%;
+    height: 100%;
+    background-color: #364f6b44;
+}
+
+.cvContainer{
+    width: 100%;
+    height: 2300px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.lbslfContainer{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.rectaLL{
+    height: 28px;
+    width: 28px;
+    background-color: var(--mainColor);
+    display: inline-block;
+    margin-right: 25px;
+    transition: 0.5s;
+}
+
+.lebslau{
+    margin: 0;
+    color: var(--mainColor);
+    display: inline-block;
+    font-size: 38px;
+    transition: 0.5s;
+}
+
+
+/*/////////////////////////////*/
+
+.infocardContainer{
+    width: 640px;
+}
+
+.inftitl{
+    font-size: 22px;
+    color: var(--mainColor);
+    font-weight: bold;
+}
+
+.divinfCard{
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardgrid{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+    grid-template-columns: 200px auto;
+}
+
+.titInf , .theinf{
+    font-size: 18px;
+    color: var(--mainColor);
+}
+
+.titInf{
+    font-weight: bold;
+}
+
+.theinf{
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+.ausbildungsContainer{
+    margin-top: 70px;
+    width: 640px;
+    position: relative;
+}
+
+.timeLineA , .timeLineK , .timeLineP{
+    width: 4px;
+    height: 80%;
+    position: absolute;
+    background-color: var(--mainColor);
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50% , 50%);
+    z-index: -1;
+}
+
+.timeLineP , .timeLineK{
+    height: 60%;
+}
+
+.felddatjob{
+    width: 100%;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 5px;
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+    grid-template-columns: 210px 1fr;
+    grid-template-rows: max-content;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.datumj{
+    font-size: 18px;
+    color: var(--mainColor);
+    margin: auto 20px;
+}
+
+.wdjh{
+    margin: auto 0;
+    font-size: 16px;
+    width: 90%;
+}
+
+
+.lllleeer{
+    height: 50px;
+    width: 50px;
+    background-color: #000;
+}
